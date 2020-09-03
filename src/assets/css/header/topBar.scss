@@ -1,0 +1,16 @@
+
+@mixin auto {
+	margin: 0px auto;
+}
+.header-top{
+	height: 40px;
+	line-height:40px;
+	width: 100%;
+	background-color: #f8f8f8;
+}
+.top{
+	// margin: 0px auto;
+	@include auto;
+	width: 1190px;
+	height: 100%;
+}

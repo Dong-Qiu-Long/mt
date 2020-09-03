@@ -1,0 +1,113 @@
+.search-box{
+	width: 1190px;
+	margin: 0px auto;
+	height: 157px;
+}
+.search-row{
+	margin-top: 28px;
+	height:93px;
+}
+.left,.center,h1,a{
+	height: 100%;
+	// border:1px solid red;
+}
+.logo{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-image: url(http://s0.meituan.net/bs/fe-web-meituan/fa5f0f0/img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 126px 46px;
+}
+.input-box{
+	position: relative;
+	width: 550px;
+	height: 40px;
+	margin: 0px auto;
+	.input{
+		float: left;
+		width: 470px;
+    background-color: #FFFFFF;
+    background-image: none;
+		border-top-left-radius: 6px !important;
+		border-bottom-left-radius: 6px !important;
+		border: 1px solid #DCDFE6;
+		border-right: none;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+	.btn{
+		float: right;
+		width: 80px;
+		border-radius: 6px;
+		border-top-left-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
+		border:none;
+		height: 100%;
+		font-size: 18px;
+		font-weight: 700;
+		background: #FFC300;
+	}
+}
+input{
+	border-radius: 0px !important;
+}
+.header-search-suggest{
+	position: absolute;
+	top: 40px;
+	left: 3px;
+	width: 465px;
+	background: #fff;
+	border:1px solid #ddd;
+	border-top: none;
+	box-shadow: 2 2px 27px 0 rgba(0,0,0,0.10);
+	z-index: 5;
+	ul{
+		width: 100%;
+		li{
+			width: 100%;
+			height: 25px;
+			line-height: 25px;
+			padding-left: 15px;
+			color: #999;
+			font-size: 13px;
+			text-align: left;
+			cursor: pointer;
+			box-sizing: border-box;
+			&:hover{
+				background: rgb(248, 248, 248);
+				color: #FFC300;
+			}
+		}
+	}
+}
+.input-nav{
+	margin: 0px auto;
+	width: 550px;
+	height: 20px;
+	
+	ul{
+		width: 100%;
+		height: 100%;
+		line-height: 20px;
+		li{
+			float: left;
+			font-size: 12px;
+			margin: 0px 15px;
+			color: #999;
+			a{
+				text-decoration: none;
+				&:hover{
+					color: #FFC300;;
+				}
+			}
+		}
+	}
+}

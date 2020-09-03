@@ -1,0 +1,34 @@
+a{
+	text-decoration: none;
+	color: #999;
+}
+a:hover{
+	color: rgb(245, 145, 60);
+}
+.box{
+	text-align: left;
+	font-size: 12px;
+	color: #666;
+	div{
+		display: inline-block;
+		color:#999;
+		a{
+			margin: 0px 3px;
+		}
+		
+	}
+	.l-box{
+		margin-left: 20px;
+		.login{
+			color: rgb(245, 145, 60);
+		}
+	}
+}
+.get-city{
+	margin: 0px 4px;
+	background: #f4f4f4;
+	border:1px solid #e5e5e5;
+	color: #666;
+	padding:2px;
+	font-size: 11px;
+}
