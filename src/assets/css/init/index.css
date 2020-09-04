@@ -13,3 +13,16 @@ legend { color:#000; }
 fieldset, img { border:0; } 
 button, input, select, textarea { font-size:100%; } 
 table { border-collapse:collapse; border-spacing:0; }
+@font-face {
+  font-family: 'iconfont';  /* project id 2045027 */
+  src: url('//at.alicdn.com/t/font_2045027_aooq0lfb8.eot');
+  src: url('//at.alicdn.com/t/font_2045027_aooq0lfb8.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2045027_aooq0lfb8.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2045027_aooq0lfb8.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2045027_aooq0lfb8.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2045027_aooq0lfb8.svg#iconfont') format('svg');
+}
+.ico{
+  font-family: 'iconfont';
+  font-style: normal;
+}

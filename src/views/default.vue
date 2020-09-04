@@ -19,6 +19,8 @@ import mainBar from '@/components/main/index.vue';
 export default {
   components: {
     headerBar,
+    footerBar,
+    mainBar,
   },
 };
 </script>
@@ -32,5 +34,14 @@ header{
 	height: 197px !important;
 	box-shadow: 0 2px 27px 0 rgba(0,0,0,0.10)
 }
-
+main{
+	padding: 0px !important;
+	position: relative;
+	top: -55px;
+	width: 1190px;
+	margin: 0px auto;
+	height: 600px;
+	border:1px solid red;
+	overflow:initial !important;
+}
 </style>

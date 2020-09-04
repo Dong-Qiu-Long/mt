@@ -1,0 +1,129 @@
+.box{
+	width: 100%;
+	height: 450px;
+	.top{
+		height: 25px;
+		line-height: 25px;
+		// margin-top: 15px ;
+		width: 640px;
+		margin: 15px auto !important;
+		a{
+			color: #333;
+			font-weight: 700;
+			text-decoration: none;
+			margin: 0px 15px;
+			transition: color 0.2s;
+			&:nth-of-type(1):hover{
+        color: rgb(251, 206, 66);
+			}
+			&:nth-of-type(2):hover{
+        color: rgb(237, 30, 36);
+			}
+			&:nth-of-type(3):hover{
+        color: rgb(240, 77, 78);
+			}
+			&:nth-of-type(4):hover{
+        color: rgb(253, 196, 17);
+			}
+			&:nth-of-type(5):hover{
+        color: rgb(254, 240, 0);
+			}
+			&:nth-of-type(6):hover{
+        color: rgb(240, 77, 78);
+			}
+		}
+	}
+	.center{
+		width: 100%;
+		height: 255px;
+		&>div{
+			position: relative;
+			margin-top: 10px;
+			clear: both;
+			overflow: hidden;
+			
+		}
+		.left{
+			position: relative;
+			width: 545px;
+			height: 240px;
+			float: left;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.right{
+			width: 140px;
+			float: right;
+			height: 240px;
+			a{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background-size: 100%;
+				background-image: url(http://p0.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg);
+			}
+		}
+	}
+	.bottom{
+		height: 157px;
+		padding-top: 2px;
+		.bottom-link{
+			float: left;
+			display: inline-block;
+			width: 270px;
+			margin-right: 5px;
+			height: 100%;
+			a{
+				width: 100%;
+				height: 100%;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.bottom-item{
+			display: inline-block;
+			width: 140px;
+			height: 157px;
+			box-sizing: border-box;
+			float: right;
+			a{
+				width: 100%;
+				height: 100%;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+.el-carousel__item h3 {
+	color: #475669;
+	font-size: 18px;
+	opacity: 0.75;
+	line-height: 300px;
+	margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+	background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+	background-color: #d3dce6;
+}
+.el-carousel__arrow{
+	position: absolute;
+	top: 50% !important;
+}
+.el-carousel,.el-carousel__container{
+	height: 240px !important;
+	overflow: hidden;
+}
+.el-carousel__item{
+	height: 240px !important;
+}
