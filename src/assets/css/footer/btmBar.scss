@@ -1,0 +1,80 @@
+.btm-box {
+  height: 120px;
+  padding: 12px 0px 30px 20px;
+  div {
+    height: 100%;
+  }
+  .left {
+    text-align: left;
+    p {
+      line-height: 20px;
+      font-size: 12px;
+      color: #666;
+      a {
+        text-decoration: none;
+        color: #666;
+        &:hover {
+          color: rgb(252, 154, 0);
+        }
+      }
+    }
+  }
+  .right {
+    text-align: right;
+    font-size: 12px;
+    .top {
+      text-decoration: none;
+      color: #666;
+      &:hover {
+        color: rgb(252, 154, 0);
+      }
+      img {
+        vertical-align: middle;
+      }
+      span {
+        vertical-align: middle;
+      }
+    }
+    & > div > a {
+      display: inline-block;
+      width: 109px;
+      height: 38px;
+    }
+    .one {
+			width: 138px;
+			white-space: nowrap;
+			color: #999;
+			margin-right: 35px;
+      img {
+        width: 38px;
+        height: 38px;
+        vertical-align: middle;
+			}
+			span{
+				white-space: nowrap;
+			}
+		}
+		&>div{
+			a{
+				margin-top: 15px;
+				margin-left: 5px;
+			}
+			.one{
+				position: relative;
+				top: -15px;
+			}
+			&>a:nth-child(2){
+				background-image: url(https://bj.meituan.com/img/sprites/footer.png);
+				background-position: 0px -167px;
+			}
+			&>a:nth-child(3){
+				background-image: url(https://bj.meituan.com/img/sprites/footer.png);
+				background-position: 0px -127px;
+			}
+			&>a:nth-child(4){
+				background-image: url(https://bj.meituan.com/img/sprites/footer.png);
+				background-position: 0px -40px;
+			}
+		}
+  }
+}

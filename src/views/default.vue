@@ -1,10 +1,10 @@
 <template>
   <el-container>
-		<el-header>
+		<el-header :class="{'height':height}">
 			<headerBar/>
 		</el-header>
 		<el-main>
-			<mainBar/>
+			<router-view></router-view>
 		</el-main>
 		<el-footer>
 			<footerBar/>
@@ -14,13 +14,16 @@
 <script>
 import headerBar from '@/components/header/index.vue';
 import footerBar from '@/components/footer/index.vue';
-import mainBar from '@/components/main/index.vue';
 
 export default {
   components: {
     headerBar,
     footerBar,
-    mainBar,
+  },
+  data() {
+    return {
+      height: true,
+    };
   },
 };
 </script>
@@ -40,8 +43,15 @@ main{
 	top: -55px;
 	width: 1190px;
 	margin: 0px auto;
-	height: 600px;
-	border:1px solid red;
+	// height: 600px;
 	overflow:initial !important;
+}
+footer{
+	width: 1190px;
+	height:auto !important;
+	margin: 0px auto;
+	padding: 0px !important;
+	overflow:initial !important;
+	margin-top: -10px;
 }
 </style>

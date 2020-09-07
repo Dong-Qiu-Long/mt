@@ -1,5 +1,5 @@
 <template>
-	<div class="header">
+	<div class="'header'" >
 		<el-row class="header-top">
 			<topBar/>
 		</el-row>
@@ -21,4 +21,7 @@ export default {
 </script>
 <style lang='scss' scoped>
 	@import '@/assets/css/header/topBar.scss';
+	.height{
+		height: 122px !important;
+	}
 </style>

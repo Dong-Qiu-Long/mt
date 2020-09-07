@@ -1,0 +1,59 @@
+
+.box{
+	dd{
+		width: 26px;
+		height: 26px;
+		line-height: 25px;
+		text-align: center;
+		border-radius: 50%;
+		cursor: pointer;
+		&:hover{
+			background: rgb(248, 248, 248);
+		}
+	}
+}
+.region{
+	width: 100%;
+	margin-top: 15px;
+	// border:1px solid red;
+	dl{
+		width: 100%;
+		overflow: hidden;
+		padding-bottom: 15px;
+		border-radius: 6px;
+		transition: background 0.5s;
+		&:hover{
+			background:rgb(248, 248, 248) ;
+		}
+		dt{
+			margin-top:10px;
+			margin-left:10px;
+			float: left;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 50%;
+			background: rgb(255, 208, 0);
+		}
+		&>div{
+			float: right;
+			width: calc(100% - 65px);
+			dd{
+				margin-top: 20px;
+				float: left;
+				margin-right: 30px;
+				a{
+					text-decoration: none;
+					color: #666;
+					&:hover{
+						color: #111;
+					}
+					&.hot{
+						color: #FF6600;
+					}
+				}
+			}
+		}
+	}
+}

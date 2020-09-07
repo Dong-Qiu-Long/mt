@@ -3,15 +3,19 @@
 		<el-row class="page">
 			<pageBar/>
 		</el-row>
-		<el-row>内容</el-row>
+		<el-row>
+			<contentBar/>
+		</el-row>
 	</div>
 </template>
 <script>
 import pageBar from './page/index.vue';
+import contentBar from './content/index.vue';
 
 export default {
   components: {
     pageBar,
+    contentBar,
   },
 };
 </script>
