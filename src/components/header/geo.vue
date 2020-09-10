@@ -11,8 +11,8 @@
       ]
     </div>
     <div class="l-box">
-      <a href class="login">立即登录</a>
-      <a href="register">注册</a>
+      <a href='/login' class="login">立即登录</a>
+      <a href="/register">注册</a>
     </div>
   </div>
 </template>

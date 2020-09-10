@@ -23,12 +23,27 @@ const routes = [
         name: 'chageCity',
         component: () => import('@/page/changeCity.vue'),
       },
+      {
+        path: '/commodity',
+        name: 'commodity',
+        component: () => import('@/page/commodity.vue'),
+      },
     ],
   },
   {
     path: '/blank',
     name: 'blankPage',
     component: blankPage,
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/page/login.vue'),
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import('@/page/register.vue'),
   },
 ];
 

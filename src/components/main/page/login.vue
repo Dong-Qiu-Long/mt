@@ -6,10 +6,10 @@
       </el-avatar>
       <p>Hi! 你好</p>
       <el-button round class="btn login">
-				<a href="#">登录</a>
+				<a href="/login">登录</a>
 			</el-button>
       <el-button round class="btn reg">
-				<a href="#">注册</a>
+				<a href="/register">注册</a>
 			</el-button>
     </div>
     <div class="bottom">
