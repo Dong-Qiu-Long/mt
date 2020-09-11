@@ -36,7 +36,7 @@
               <a href>忘记密码?</a>
             </div>
             <div class="ops">
-              <button>登录</button>
+              <button @click="meg()">登录</button>
             </div>
             <div class="signup-guide">
               <span>还没有账号?</span>
@@ -84,12 +84,36 @@
   </div>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
       text: '',
       password: '',
     };
+  },
+  methods: {
+    meg() {
+      axios
+        .get('/api/meituan/login', {
+          params: {
+            appkey: 'qiulong_1593678868561',
+            userName: this.text,
+            password: this.password,
+          },
+        })
+        .then((res) => {
+          console.log(res);
+          if (res.status === 'success') {
+            alert(res.msg);
+            document.cookie = `name = ${res.data};max-age=50000`;
+            this.$router.push('/');
+          } else {
+            alert(res.msg);
+          }
+        });
+    },
   },
 };
 </script>

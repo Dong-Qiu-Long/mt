@@ -17,6 +17,15 @@ const routes = [
         path: '/index',
         name: 'index',
         component: mainBar,
+        beforeEnter: (to, from, next) => {
+          // ...
+          if (document.cookie) {
+            next();
+          } else {
+            alert('您还没有登录哦！');
+            next('/login');
+          }
+        },
       },
       {
         path: '/chageCity',

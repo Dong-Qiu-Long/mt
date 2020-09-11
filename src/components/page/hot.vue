@@ -2,20 +2,26 @@
 	<div class="box">
 		<dl>
 			<dt>热门城市:</dt>
-			<dd><a href="/">北京</a></dd>
-			<dd><a href="/">上海</a></dd>
-			<dd><a href="/">广州</a></dd>
-			<dd><a href="/">深圳</a></dd>
-			<dd><a href="/">天津</a></dd>
-			<dd><a href="/">西安</a></dd>
-			<dd><a href="/">重庆</a></dd>
-			<dd><a href="/">杭州</a></dd>
-			<dd><a href="/">南京</a></dd>
-			<dd><a href="/">武汉</a></dd>
-			<dd><a href="/">成都</a></dd>
+			<dd v-for='item in arr' :key='item.id'><a href="/">{{item.name}}</a></dd>
 		</dl>
 	</div>
 </template>
+<script>
+import axios from '@/plugins/axios';
+
+export default {
+  data() {
+    return {
+      arr: [],
+    };
+  },
+  created() {
+    axios.get('/api/meituan/city/hot.json').then((res) => {
+      this.arr = res.data;
+    });
+  },
+};
+</script>
 <style lang='scss' scoped>
 @import '@/assets/css/page/hot.scss';
 </style>
